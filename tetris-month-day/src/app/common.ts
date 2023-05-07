@@ -295,9 +295,9 @@ const shape_2_7 = [
 ];
 
 const shape_2_8 = [
-  [1, 0],
   [1, 1],
   [1, 1],
+  [0, 1],
 ];
 
 const shape_3_1 = [

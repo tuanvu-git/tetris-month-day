@@ -87,9 +87,9 @@ const shape_2_7 = [
 ];
 
 const shape_2_8 = [
-    [1, 0],
     [1, 1],
     [1, 1],
+    [0, 1],
 ];
 
 const shape_3_1 = [
@@ -269,7 +269,6 @@ const shape_8_4 = [
     [1, 0, 0],
     [1, 1, 1],
 ];
-
 
 const initalBoard = [ // 2 dimensional array ( 7 * 7)
     // row -> col = cell

@@ -85,6 +85,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentBoard = JSON.parse(JSON.stringify(this.initBoard));
+    console.log(shapeAll)
   }
 
   onExecute() {
@@ -109,14 +110,15 @@ export class AppComponent implements OnInit {
     if (index >= this.responseData.length - 1) this.currentIndex = this.responseData.length - 1
     const _2dBoard = JSON.parse(JSON.stringify(initalBoardV2));
     const dataToRender = this.responseData[this.currentIndex];
-    const shape0 = shapeAll[0][dataToRender.shape0.card];
-    const shape1 = shapeAll[1][dataToRender.shape1.card];
-    const shape2 = shapeAll[2][dataToRender.shape2.card];
-    const shape3 = shapeAll[3][dataToRender.shape3.card];
-    const shape4 = shapeAll[4][dataToRender.shape4.card];
-    const shape5 = shapeAll[5][dataToRender.shape5.card];
-    const shape6 = shapeAll[6][dataToRender.shape6.card];
-    const shape7 = shapeAll[7][dataToRender.shape7.card];
+    const shapea = JSON.parse(JSON.stringify(shapeAll));
+    const shape0 = shapea[0][dataToRender.shape0.card];
+    const shape1 = shapea[1][dataToRender.shape1.card];
+    const shape2 = shapea[2][dataToRender.shape2.card];
+    const shape3 = shapea[3][dataToRender.shape3.card];
+    const shape4 = shapea[4][dataToRender.shape4.card];
+    const shape5 = shapea[5][dataToRender.shape5.card];
+    const shape6 = shapea[6][dataToRender.shape6.card];
+    const shape7 = shapea[7][dataToRender.shape7.card];
     this.isSelected = true;
     updateBoardv2(shape0, dataToRender.shape0.point.row, dataToRender.shape0.point.col, _2dBoard, 1);
     updateBoardv2(shape1, dataToRender.shape1.point.row, dataToRender.shape1.point.col, _2dBoard, 2);
