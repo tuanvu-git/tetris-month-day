@@ -1,0 +1,51 @@
+<div class="container mt-3">
+  <h1 class="text-center">Tetris birthday</h1>
+  <div class="d-flex">
+    <div class=" mx-auto">
+      <div class="d-flex content-board">
+        <div class="input-field">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">month-day</span>
+            </div>
+            <input type="text" [(ngModel)]="month" class="form-control" placeholder="ex: 09">
+            <input type="text" [(ngModel)]="day" class="form-control" placeholder="ex: 27">
+            <div class="input-group-append">
+              <button type="button btn" class="btn btn-outline-primary" (click)="onExecute()">Execute</button>
+              <button type="button btn" class="btn btn-outline-secondary" (click)="onReset()">Reset</button>
+            </div>
+          </div>
+          <div *ngIf="responseData.length > 0" class="mt-2">Possible Solutions (*Select one)</div>
+          <div class="select-results" >
+            <div id="selection-{{index}}" class="selection-one-result" [class.selected]="index === currentIndex" *ngFor="let data of responseData;let index = index;trackBy:userByName"
+              (click)="onSelectOne(index)">
+              Solution {{index + 1}}
+            </div>
+          </div>
+
+        </div>
+
+        <div class="grid-container ml-auto">
+          <ng-container *ngFor="let item of currentBoard">
+            <div
+              [style.background-color]="item.color" class="grid-item"
+            >
+              {{ item.text }}
+            </div>
+
+          </ng-container>
+
+        </div>
+
+
+      </div>
+      <div class="all-shape-default mt-3">
+        <div class="grid-container-22">
+          <div *ngFor="let item of initShape" class="grid-item"
+            [style.background-color]="item == '' ? '' : allColorShape[+item]"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
