@@ -1,0 +1,47 @@
+@import 'variables';
+
+@each $size,
+$value in $value-sizes {
+  .padding-top-#{$size} {
+    padding-top: $value;
+  }
+
+  .padding-bottom-#{$size} {
+    padding-bottom: $value;
+  }
+
+  .padding-left-#{$size} {
+    padding-left: $value;
+  }
+
+  .padding-right-#{$size} {
+    padding-right: $value;
+  }
+
+  .padding-#{$size} {
+    padding: $value;
+  }
+
+  .padding-y-#{$size} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  .padding-x-#{$size} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+}
+
+.padding-y-11dot5px {
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+}
+
+.padding-top-1dot25rem {
+  padding-top: 1.25rem !important;
+}
+
+.padding-bot-1dot25rem {
+  padding-bottom: 1.25rem !important;
+}

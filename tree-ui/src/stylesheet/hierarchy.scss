@@ -1,0 +1,233 @@
+@import './mixins/media';
+
+#hierarchy-dashboard {
+  .card {
+    border-top-left-radius: 17px !important;
+    border-top-right-radius: 17px !important;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+  }
+
+  .card-body {
+    padding: 0px 0 50px 0;
+  }
+
+  .title-hierarchy-line {
+    .tree-hierarchy {
+      padding-left: 72px;
+      margin-top: 15px;
+      list-style-type: none;
+      position: relative;
+    }
+
+    .tree-hierarchy-before::before {
+      content: '';
+      left: 35px;
+      position: absolute;
+      right: auto;
+      border-left: 1px solid #D5D5D5;
+      height: calc(100% + 17px);
+      top: 30px;
+      width: 1px;
+
+      @media (max-width: 768px) {
+        height: 0;
+      }
+    }
+
+    .tree-hierarchy-after::after {
+      content: '';
+      left: 36px;
+      position: absolute;
+      right: auto;
+      border-top: 1px solid #D5D5D5;
+      height: 1px;
+      top: 30px;
+      width: 37px;
+
+      @media (max-width: 768px) {
+        width: 0;
+      }
+    }
+
+    li.parent_li li:not(:last-child)::before {
+      height: 100% !important;
+    }
+
+    // Team OKRs page
+    .team-okrs-no-dept {
+      .tree-hierarchy {
+        padding-left: 0;
+      }
+
+      .tree-hierarchy-after::after {
+        width: 0;
+      }
+
+      @include media(tabletAndUp) {
+        .tree-hierarchy {
+          padding-left: 113px;
+        }
+
+        .tree-hierarchy-after::after {
+          width: 78px;
+        }
+      }
+    }
+  }
+
+  .tree li:last-child::before {
+    height: 21px;
+  }
+
+  .tree li:last-child::after {
+    top: 20px;
+  }
+
+  .updown-unlinked-icon-before::before {
+    content: '';
+    left: 35px;
+    position: absolute;
+    right: auto;
+    border-left: 1px solid #D5D5D5;
+    height: 39px;
+    top: 40px;
+    width: 1px;
+
+    @media (max-width: 992px) {
+      left: 20px;
+      height: 100%;
+    }
+
+    @media (max-width: 768px) {
+      left: 0;
+      height: 0;
+    }
+  }
+
+  .content-hierarchy {
+    padding: 0 36px;
+
+    .tree-objectives {
+      div.tree li.parent_li li:not(:last-child)::before {
+        height: 100% !important;
+      }
+    }
+
+    .tree-objectives .tree li::before {
+      top: 0px;
+    }
+  }
+
+  .content-hierarchy.dept-cluster-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    @include media(tabletAndUp) {
+      padding-left: 40px !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  .time-title {
+    padding-left: 22px;
+    padding-right: 22px;
+    justify-content: space-between;
+  }
+
+  .visualization-title {
+    background: #F9F9F9;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    padding-top: 34px;
+    padding-bottom: 33px;
+    padding-left: 22px;
+
+    @media only screen and (max-width: 1023px) {
+      background: white;
+    }
+  }
+
+  .updown-unlinked-icon {
+    min-width: 15px;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .content-hierarchy {
+      padding-left: 45px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .content-hierarchy {
+      .tree-objectives {
+        div.tree li.parent_li li:not(:last-child)::before {
+          height: 125% !important;
+        }
+      }
+    }
+
+    .hierarchy-body {
+      height: 100%;
+      padding-top: 0 !important;
+    }
+
+    .time-title {
+      padding: unset;
+      justify-content: center;
+    }
+
+    .title-hierarchy-line .tree-hierarchy-before::before,
+    .title-hierarchy-line .tree-hierarchy-after::after {
+      left: 20px;
+    }
+
+    .title-hierarchy-line .tree-hierarchy {
+      padding-left: 52px;
+    }
+
+    .updown-unlinked-icon {
+      min-width: auto;
+    }
+  }
+
+  @media only screen and (max-width: 484px) {
+    .content-hierarchy {
+      .tree-objectives {
+        div.tree li.parent_li li:not(:last-child)::before {
+          height: 100% !important;
+        }
+      }
+
+      padding: unset;
+    }
+
+    .card {
+      border: none !important;
+    }
+
+    .card-body {
+      padding: 25px !important;
+    }
+
+    .hierarchy-body {
+      padding-top: 0 !important;
+    }
+
+    .title-hierarchy-line .tree-hierarchy {
+      padding-left: 0;
+    }
+  }
+
+  @media only screen and (max-width: 429px) {
+    .title-page {
+      font-size: 22px !important;
+    }
+  }
+
+  @media only screen and (max-width: 395px) {
+    .title-page {
+      font-size: 18px !important;
+    }
+  }
+}

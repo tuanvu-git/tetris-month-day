@@ -1,0 +1,42 @@
+#image-tooltip {
+  .sharp-tooltip {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none;
+  }
+
+  .sharp-tooltip::before {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+  }
+
+  .sharp-tooltip[data-placement^="top"]::before {
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sharp-tooltip[data-placement^="bottom"]::before {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+  }
+
+  .sharp-tooltip[data-placement^="left"]::before {
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%) rotate(270deg);
+  }
+
+  .sharp-tooltip[data-placement^="right"]::before {
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%) rotate(90deg);
+  }
+}

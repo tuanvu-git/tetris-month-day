@@ -1,0 +1,361 @@
+$blue: #3C84E7;
+$blue-100: #e7f8ff;
+$blue-200: #dfedff;
+$blue-300: #eff6ff;
+$blue-400: #DFEDFF;
+$blue-500: #A4C2F4;
+$yellow: #F6C750;
+$yellow-opacity: #FDF4DC;
+$red: #EE3158;
+$red-opacity: #FCD6DE;
+$black: #000000;
+$gray-100: #333333;
+$gray-200: #666666;
+$gray-300: #999999;
+$gray-400: #D5D5D5;
+$gray-500: #737373;
+$white: #FFFFFF;
+$white-100: #F1F1F1;
+$white-200: #F9F9F9;
+$purple: #B073DF;
+$green: #3ED769;
+$green-100: #2BC2A3;
+$green-102: #13a989;
+$green-100-opacity: #D5F3ED;
+$green-200: #2FC2A4;
+$green-300: #0AA484;
+$green-400: #D5F3ED;
+$green-500: #EEF6F4;
+$green-600: rgba(62, 215, 105, 0.15);
+$orange: #FF9F59;
+$orange-100: #FAB5A5;
+$cyan: #3bafda;
+$pink: #f672a7;
+$muted: #ced4da;
+
+$colors: (
+);
+$colors: map-merge(("blue": $blue,
+      "blue-100": $blue-100,
+      "blue-200": $blue-200,
+      "blue-300": $blue-300,
+      "blue-400": $blue-400,
+      "blue-opacity": $blue-400,
+      "blue-500": $blue-500,
+      "yellow": $yellow,
+      "yellow-opacity": $yellow-opacity,
+      "red": $red,
+      "red-opacity": $red-opacity,
+      "black": $black,
+      "gray-100": $gray-100,
+      "gray-200": $gray-200,
+      "gray-300": $gray-300,
+      "gray-400": $gray-400,
+      "gray-500": $gray-500,
+      "white": $white,
+      "white-100": $white-100,
+      "white-200": $white-200,
+      "purple": $purple,
+      "green": $green,
+      "green-100": $green-100,
+      "green-102": $green-102,
+      "green-100-opacity": $green-100-opacity,
+      "green-200": $green-200,
+      "green-300": $green-300,
+      "green-400": $green-400,
+      "green-500": $green-500,
+      "green-600": $green-600,
+      "orange": $orange,
+      "orange-100": $orange-100,
+      "cyan": $cyan,
+      "pink": $pink,
+      "muted": $muted ),
+    $colors);
+
+$primary: $blue;
+$secondary: $gray-300;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$purple: $purple;
+$pink: $pink;
+$light: $gray-200;
+$dark: $gray-100;
+$green-100: $green-100;
+$green-600: $green-600;
+
+$theme-colors: (
+);
+$theme-colors: map-merge(("primary": $primary,
+      "secondary": $secondary,
+      "success": $success,
+      "info": $info,
+      "warning": $warning,
+      "danger": $danger,
+      "purple": $purple,
+      "pink": $pink,
+      "light": $light,
+      "dark": $dark,
+      "green-100": $green-100,
+      "green-600": $green-600 ),
+    $theme-colors);
+
+$_0px: 0px !important;
+$_1px: 1px !important;
+$_2px: 2px !important;
+$_3px: 3px !important;
+$_4px: 4px !important;
+$_5px: 5px !important;
+$_6px: 6px !important;
+$_7px: 7px !important;
+$_8px: 8px !important;
+$_9px: 9px !important;
+$_10px: 10px !important;
+$_11px: 11px !important;
+$_12px: 12px !important;
+$_13px: 13px !important;
+$_14px: 14px !important;
+$_15px: 15px !important;
+$_16px: 16px !important;
+$_17px: 17px !important;
+$_18px: 18px !important;
+$_19px: 19px !important;
+$_20px: 20px !important;
+$_21px: 21px !important;
+$_22px: 22px !important;
+$_23px: 23px !important;
+$_24px: 24px !important;
+$_25px: 25px !important;
+$_26px: 26px !important;
+$_27px: 27px !important;
+$_28px: 28px !important;
+$_29px: 29px !important;
+$_30px: 30px !important;
+$_31px: 31px !important;
+$_32px: 32px !important;
+$_33px: 33px !important;
+$_34px: 34px !important;
+$_35px: 35px !important;
+$_36px: 36px !important;
+$_37px: 37px !important;
+$_38px: 38px !important;
+$_39px: 39px !important;
+$_40px: 40px !important;
+$_42px: 42px !important;
+$_43px: 43px !important;
+$_44px: 44px !important;
+$_45px: 45px !important;
+$_46px: 46px !important;
+$_47px: 47px !important;
+$_48px: 48px !important;
+$_49px: 49px !important;
+$_50px: 50px !important;
+
+$_54px: 54px !important;
+$_55px: 55px !important;
+$_56px: 56px !important;
+$_58px: 58px !important;
+$_60px: 60px !important;
+$_62px: 62px !important;
+$_64px: 64px !important;
+$_65px: 65px !important;
+$_70px: 70px !important;
+$_75px: 75px !important;
+$_78px: 78px !important;
+$_80px: 80px !important;
+$_84px: 84px !important;
+$_85px: 85px !important;
+$_86px: 86px !important;
+$_90px: 90px !important;
+$_93px: 93px !important;
+$_100px: 100px !important;
+
+$_110px: 110px !important;
+$_120px: 120px !important;
+$_124px: 124px !important;
+$_130px: 130px !important;
+$_135px: 135px !important;
+$_140px: 140px !important;
+$_143px: 143px !important;
+$_147px: 147px !important;
+$_150px: 150px !important;
+$_156px: 156px !important;
+$_160px: 160px !important;
+$_165px: 165px !important;
+$_169px: 169px !important;
+$_170px: 170px !important;
+$_175px: 175px !important;
+$_180px: 180px !important;
+$_188px: 188px !important;
+$_190px: 190px !important;
+$_193px: 193px !important;
+$_200px: 200px !important;
+
+$_208px: 208px !important;
+$_210px: 210px !important;
+$_230px: 230px !important;
+$_242px: 242px !important;
+$_255px: 255px !important;
+$_279px: 279px !important;
+$_285px: 285px !important;
+$_290px: 290px !important;
+$_300px: 300px !important;
+$_309px: 309px !important;
+$_326px: 326px !important;
+$_350px: 350px !important;
+$_369px: 369px !important;
+$_400px: 400px !important;
+
+$_402px: 402px !important;
+$_418px: 418px !important;
+$_425px: 425px !important;
+$_440px: 440px !important;
+$_462px: 462px !important;
+$_463px: 463px !important;
+$_480px: 480px !important;
+$_484px: 484px !important;
+$_500px: 500px !important;
+$_555px: 555px !important;
+$_622px: 622px !important;
+$_630px: 630px !important;
+$_650px: 650px !important;
+$_670px: 670px !important;
+$_693px: 693px !important;
+$_882px: 882px !important;
+
+$value-sizes: (
+);
+$value-sizes: map-merge(("0px": $_0px,
+      "1px": $_1px,
+      "2px": $_2px,
+      "3px": $_3px,
+      "4px": $_4px,
+      "5px": $_5px,
+      "6px": $_6px,
+      "7px": $_7px,
+      "8px": $_8px,
+      "9px": $_9px,
+      "10px": $_10px,
+      "11px": $_11px,
+      "12px": $_12px,
+      "13px": $_13px,
+      "14px": $_14px,
+      "15px": $_15px,
+      "16px": $_16px,
+      "17px": $_17px,
+      "18px": $_18px,
+      "19px": $_19px,
+      "20px": $_20px,
+      "21px": $_21px,
+      "22px": $_22px,
+      "23px": $_23px,
+      "24px": $_24px,
+      "25px": $_25px,
+      "26px": $_26px,
+      "27px": $_27px,
+      "28px": $_28px,
+      "29px": $_29px,
+      "30px": $_30px,
+      "31px": $_31px,
+      "32px": $_32px,
+      "33px": $_33px,
+      "34px": $_34px,
+      "35px": $_35px,
+      "36px": $_36px,
+      "37px": $_37px,
+      "38px": $_38px,
+      "39px": $_39px,
+      "40px": $_40px,
+      "42px": $_42px,
+      "43px": $_43px,
+      "45px": $_45px,
+      "46px": $_46px,
+      "47px": $_47px,
+      "48px": $_48px,
+      "49px": $_49px,
+      "50px": $_50px,
+      "54px": $_54px,
+      "55px": $_55px,
+      "56px": $_56px,
+      "58px": $_58px,
+      "60px": $_60px,
+      "62px": $_62px,
+      "64px": $_64px,
+      "65px": $_65px,
+      "70px": $_70px,
+      "75px": $_75px,
+      "78px": $_78px,
+      "80px": $_80px,
+      "84px": $_84px,
+      "85px": $_85px,
+      "86px": $_86px,
+      "90px": $_90px,
+      "93px": $_93px,
+      "100px": $_100px,
+      "110px": $_110px,
+      "120px": $_120px,
+      "124px": $_124px,
+      "130px": $_130px,
+      "135px": $_135px,
+      "140px": $_140px,
+      "143px": $_143px,
+      "147px": $_147px,
+      "150px": $_150px,
+      "156px": $_156px,
+      "160px": $_160px,
+      "165px": $_165px,
+      "169px": $_169px,
+      "170px": $_170px,
+      "175px": $_175px,
+      "180px": $_180px,
+      "188px": $_188px,
+      "190px": $_190px,
+      "193px": $_193px,
+      "200px": $_200px,
+      "208px": $_208px,
+      "210px": $_210px,
+      "230px": $_230px,
+      "242px": $_242px,
+      "255px": $_255px,
+      "279px": $_279px,
+      "285px": $_285px,
+      "290px": $_290px,
+      "300px": $_300px,
+      "309px": $_309px,
+      "326px": $_326px,
+      "350px": $_350px,
+      "369px": $_369px,
+      "400px": $_400px,
+      "402px": $_402px,
+      "418px": $_418px,
+      "425px": $_425px,
+      "440px": $_440px,
+      "462px": $_462px,
+      "463px": $_463px,
+      "480px": $_480px,
+      "484px": $_484px,
+      "500px": $_500px,
+      "555px": $_555px,
+      "622px": $_622px,
+      "630px": $_630px,
+      "650px": $_650px,
+      "670px": $_670px,
+      "693px": $_693px,
+      "882px": $_882px ),
+    $value-sizes);
+
+$font-weights: (
+);
+$font-weights: map-merge(("100": 100,
+      "200": 200,
+      "300": 300,
+      "400": 400,
+      "500": 500,
+      "600": 600,
+      "700": 700,
+      "800": 800,
+      "900": 900),
+    $font-weights);
+
+$default-radius: 5px;

@@ -26,6 +26,7 @@ const shape_1_5 = [
     [0, 1],
 ];
 
+// 1-6 / 1-8 duplicate
 const shape_1_6 = [
     [0, 1],
     [0, 1],
